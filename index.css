@@ -1,0 +1,32 @@
+header {
+	background-image: url('images/header.gif');
+	background-size: 50% 100%;
+	background-repeat: repeat;
+	padding: 30px;
+}
+
+.avatar {
+	border-radius: 50%;
+}
+
+.author {
+	color: white;
+	background-color: cadetblue;
+	display: inline-block; 
+}
+
+.footer-text {
+    text-align: left;
+    padding: 10px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: gray;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
