@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Web Form Exercise 2">
-		<link rel="stylesheet" type="text/css" href="./css/webform2.css">
-		<title>Web Form 2</title>
-	</head>
-	<body>
-		<div class="container">
-			<div class="logo">MUM Golden Dome Market ::: SRM System</div>
-	        <nav>
-	            <a href="/products">Products</a>
-	            <a href="/suppliers">Suppliers</a>
-	        </nav>
-		</div>
-	</body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Form Exercise 2">
+    <link rel="stylesheet" type="text/css" href="./css/webform2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Web Form 2</title>
+  </head>
+
+  <body>
+    <nav class="navbar justify-content-between" style="background-color: dodgerblue;">
+      <a class="">MUM Golden Dome Market ::: SRM System</a>
+      <a class="">Products</a>
+      <a class="">suppliers</a>
+      <form class="form-inline">
+        <button class="btn btn-primary" type="submit" style="background-color: white; color: black;">Sign Out</button>
+      </form>
+    </nav>
+    <form style="padding: 30px 50px;">
+      <h3>New Product Form</h3>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputProduct">Product Number</label>
+          <input type="" class="form-control" id="inputProduct">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputStock">Quantity in stock</label>
+          <input type="Number" class="form-control" id="inputStock">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputProduct">Name</label>
+          <input type="text" class="form-control" id="inputProduct">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputSupplier">Supplier:</label>
+          <select id="inputSupplier" class="form-control">
+            <option selected>Select a supplier</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPrice">Unit Price</label>
+          <input type="number" class="form-control" id="inputPrice" required pattern="[0-9]*(\.)?[0-9]?[0-9]?" title="Please enter a valid price.">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputDate">Date Supplid:</label>
+          <input type="text" class="form-control"  id="inputDate" name="inputDate" placeholder="mm/dd/yyyy" pattern="^\d{1,2}\/\d{1,2}\/\d{4}$" title="Please enter a valid date. Example: 04/24/2020"/>
+          <p class="tip">Enter a valid Date.</p>
+        </div>
+      </div>
+      <div class="form-row" style="float: right;">
+        <button type="button" class="btn btn-outline-dark">Reset</button>
+        <button type="button" class="btn btn-outline-danger">Cancel</button>
+        <button type="button" class="btn btn-outline-primary">Add Product</button>
+      </div>
+    </form>
+  </body>
+
 </html>

@@ -5,15 +5,14 @@
     margin-right: 80px;
 }
 
-.container {
+.header {
 	 color: #ffffff;
-    padding: 25px 50px;
     background: #4fb1ea; /* Old browsers */    
     background: linear-gradient(to bottom,  #4fb1ea 0%,#239fe5 100%);
 }
 
 nav a{
-    color: rgba(255,255,255,.9);
+    color: rgba(255,255,255,.9) !important;
     text-decoration: none;
     font-size: 18px;
     margin: 0 30px;
@@ -32,4 +31,8 @@ nav a::before{
 }
 nav a:hover{
     color: #ffffff;
+}
+
+button {
+	margin-right: 5px !important;
 }
