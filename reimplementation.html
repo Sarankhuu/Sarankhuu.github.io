@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript Intro</title>
+	</head>
+	<script type="text/javascript">
+		/*5. define a function sum() and function multiply()*/
+		function sum(arr){
+			return arr.reduce(function(a, b){
+				return a + b;
+			}, 0);
+		}
+
+		function multiply(arr){
+			return arr.reduce(function(a,b){
+				return a * b;
+			}, 1);
+		}
+
+		/*6. define a function reverse()*/
+		function reverse(str){
+			return str.split('').reverse().join('');
+		}
+
+		/*8. write a function filterLongWords()*/
+		function  filterLongWords(arr, i){
+			return arr.filter(function(el, i, arr){
+				return el.length > i;
+			});
+		}
+	</script>
+	<body>
+		
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J
+	</body>
+</html>
